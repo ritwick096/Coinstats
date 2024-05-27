@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--body_color);
+  /* color: #fff; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.coin-app {
   display: flex;
   flex-direction: column;
+  margin-top: 104px;
   align-items: center;
+  color: var(--head_color);
+}
+
+.coin-search {
+  margin-bottom: 64px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.coin-text {
+  margin-bottom: 32px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.coin-input {
+  padding: 24px;
+  width: 400px;
+  height: 50px;
+  border-radius: 24px;
+  border: none;
+  font-size: 16px;
+  background-color: var(--input_color);
+  color: var(--head_color);
+  text-transform: capitalize;
+  border: 1px solid var(--head_color);
+}
+
+.coin-input::placeholder {
+  color: var(--head_color);
+}
+
+.coin-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  border-bottom: 1px solid #FF9332;
+  height: 100px;
+  width: 1000px;
+  font-size: 18px;
+}
+
+.name {
+  width: 325px;
+  color: var(--head_color);
+}
+
+.price {
+  width: 160px;
+  color: var(--head_color);
+}
+
+.volume {
+  width: 155px;
+  color: var(--head_color);
+}
+
+.change {
+  width: 190px;
+  color: var(--head_color);
+}
+
+.mktcap {
+  color: var(--head_color);
 }
